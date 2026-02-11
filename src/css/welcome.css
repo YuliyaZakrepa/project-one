@@ -1,0 +1,52 @@
+.welcome-section {
+  padding-top: 60px;
+}
+.welcome-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 28px;
+}
+.welcome-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+.welcome-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+.accent-title {
+  color: #3350e9;
+}
+.welcome-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+}
+.welcome-reviews-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.welcome-reviews-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.welcome-reviews-item {
+  position: relative;
+}
+.welcome-reviews-img {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
