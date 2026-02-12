@@ -35,18 +35,111 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
+  width: 100%;
 }
 .welcome-reviews-list {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 .welcome-reviews-item {
-  position: relative;
+  margin-right: -10px;
 }
+
+.welcome-reviews-item:last-child {
+  margin-right: 0;
+}
+
 .welcome-reviews-img {
   border-radius: 50%;
-  position: absolute;
-  z-index: 1;
+  object-fit: cover;
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.scroll-down-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  transition: color 250ms ease-in-out;
+}
+.scroll-down-link:hover,
+.scroll-down-link:focus {
+  color: #3350e9;
+}
+.welcome-big-img-container {
+  width: 100%;
+  height: 366px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.welcome-img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (min-width: 768px) {
+  .welcome-section {
+    padding-top: 80px;
+  }
+  .welcome-container {
+    flex-direction: row;
+    align-items: stretch;
+    column-gap: 11px;
+    row-gap: 40px;
+  }
+  .welcome-title-container {
+    max-width: 557px;
+  }
+  .welcome-title {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 0.86;
+    letter-spacing: -0.02em;
+  }
+  .welcome-text {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    max-width: 440px;
+  }
+  .welcome-reviews-list-container {
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 136px;
+  }
+  .welcome-big-img-container {
+    height: 520px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .welcome-container {
+    column-gap: 307px;
+  }
+  .welcome-title {
+    font-size: 72px;
+    line-height: 0.88;
+    letter-spacing: -0.02em;
+  }
+  .welcome-text {
+    max-width: 550px;
+  }
+  .welcome-title-container {
+    max-width: 697px;
+  }
+  .welcome-reviews-list-container {
+    max-width: 146px;
+  }
+  .scroll-down-link {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .welcome-big-img-container {
+    height: 500px;
+  }
 }
